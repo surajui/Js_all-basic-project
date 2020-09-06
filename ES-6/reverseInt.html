@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReverseInt</title>
+</head>
+<body>
+    <input type="text" id="first">
+    <input type="text" id="second">
+<button onclick="reverseInt()">ReverseInt</button>
+</body>
+<script>
+    reverseInt = () =>{
+    const inputData = document.getElementById('first').value;
+    const reverse = inputData.toString().split('').reverse().join('');
+    let result = parseInt(reverse);
+    document.getElementById('second').value =  result;
+    }
+</script>
+</html>

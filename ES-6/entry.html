@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry function</title>
+</head>
+<body>
+    <input type="text" id="entry">
+    <button type="submit" onclick="getEntry()">getEntry</button>
+</body>
+<script>
+    const guestName =['suraj','ajay','manoj','nitesh','dinesh','arvind','jagadish','vikram','harish'];
+    function getEntry(){
+        let intro = document.getElementById('entry').value;
+        const checkName = guestName.includes(intro);
+        if(checkName == true){
+            alert('Please welcome');
+        }
+        else{
+            alert('U not allow in this function');
+        }
+    }
+</script>
+</html>

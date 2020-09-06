@@ -1,0 +1,76 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(120deg, #f6d365,#d88771);
+    color: white;
+    min-height: 100vh;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    font-size:1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border:none;
+    background: white;
+}
+form button{
+    color:#d88771;
+    background: white;
+    cursor: pointer;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    margin:0.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 'all 0.5s ease';
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn,.complete-btn{
+    background: #f6d365;
+    color: wheat;
+    border: none;
+    padding: 1rem;
+    cursor:pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+    background:rgb(70,203,70);
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+  opacity: 0;  
+}

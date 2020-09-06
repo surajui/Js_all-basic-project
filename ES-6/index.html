@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.js"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h5 class="text-center">Music player basic project</h5>
+    <main>
+    <div class="a song">a</div>
+    <div class="b song">b</div>
+    <div class="c song">c</div>
+    <div class="d song">d</div>
+    <div class="e song">e</div>
+    <div class="f song">f</div>
+</main>
+</body>
+<script>
+    var demo = document.querySelectorAll('.song').length;
+    console.log(demo);
+    var song2 = new Audio();
+    song2.src = './music/suraj.mp3'
+    for(var i=0;i<demo;i++){
+        var song = document.querySelectorAll('.song')[i].addEventListener('click',playSong);
+    }
+function playSong(){ 
+    alert('---music---')
+}
+</script>
+</html>

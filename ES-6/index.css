@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 90%;height: 1000px;
+    margin: auto; border: 1px solid black;
+    display: flex; justify-content: space-around;
+    align-items: center;flex-wrap: wrap;
+}
+div{
+    width: 30%;
+    height: 160px;
+    border:1px solid orange;
+    /* flex-wrap: wrap; */
+}

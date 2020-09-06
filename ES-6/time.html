@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+</head>
+<body>
+    <h6>Digital clock by using js</h6>
+    <p id="show"></p>
+    <button onclick="getTime()">Try</button>
+</body>
+<script>
+var clock = setInterval(function(){ getTime() },1000)
+function getTime(){
+    const options = {weekday: "long",month:"short",day:"numeric"}
+    var a = new Date();
+    // console.log(a.getFullYear());
+    // console.log( a.getHours()+':'+a.getMinutes()+':'+a.getSeconds());
+    var time = a.toLocaleTimeString('en-US',options) //toLocaleTimeString() it's convert the AM,PM
+    // console.log(time)
+    document.getElementById('show').innerHTML = time
+   }
+</script>
+</html>

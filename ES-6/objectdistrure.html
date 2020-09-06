@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object distructure</title>
+</head>
+<button onclick="postIncrease()">Post</button>
+<body>
+    <script>
+            //Globel scope variable.
+            let like = 0;
+          function postIncrease(){
+            // function increaseLike(){
+                like += 1;
+            console.log('---increase-- '+like)
+        //     }
+        // return increaseLike();
+        }
+        const bioData = {
+            name : 'suraj',
+            age : 23,
+            degree :'Btech',
+            hobbies : {
+                first : 'cricket',
+                second : 'watching tv'
+            }
+        }
+        // console.log(bioData.name);
+        let { name,age,degree,hobbies } = bioData;
+        console.log(`my name is ${name},my age is ${age} and my qualification ${degree},my hobbies is ${hobbies.first}`)
+        // const sum = eval("15*15+10");
+        // console.log(sum);
+    </script>
+</body>
+</html>

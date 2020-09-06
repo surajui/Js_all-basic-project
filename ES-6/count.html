@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h2>Counte</h2>
+    <span class="display"></span>
+    <div class="btn-container">
+        <button class="btn decrease">Decrease</button>
+        <button class="btn reset">Reset</button>
+        <button class="btn increase">Decrease</button>
+    </div>
+</body>
+<script>
+    let count = 0;
+    const btns = document.querySelectorAll('.btn');
+    const displays = document.querySelector('.display');
+    btns.forEach(item=>{
+        item.addEventListener('click',function(e){
+          const style = e.currentTarget.classList;
+        //   console.log(e)
+        if(style.contains("decrease")){
+         count--;
+        }
+        else if(style.contains("increase")){
+        count++;
+        }
+        else{
+            count = 0;
+        }
+        if(count>0){
+            displays.style.color = "green";
+        }
+        else if(count<0){
+            displays.style.color = "red";
+        }
+        else{
+            displays.style.color = "black"
+        }
+    displays.textContent = count;
+        })
+    })
+</script>
+</html>
