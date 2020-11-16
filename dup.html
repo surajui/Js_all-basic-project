@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var array=[1,2,3,4,2,5,6,3];
+    // var result = array.filter((item,index)=>{
+    //     if(array.indexOf(item) == index){
+    //         return item;
+    //     }
+    // })
+    let unquiArray=[];
+    for(let data of array){
+       if(unquiArray.indexOf(data)==-1){
+           unquiArray.push(data)
+       }
+    }
+    console.log(unquiArray)
+   
+</script>
+</html>
